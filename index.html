@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.onkeydown = function(e)  
+        {  
+            var oEvent = window.event;  
+            if (oEvent.keyCode == 107 && oEvent.ctrlKey) {  
+                // alert("放大");  
+            e.preventDefault()
+            }  
+            if (oEvent.keyCode == 109 && oEvent.ctrlKey) {  
+                // alert("缩小");  
+            e.preventDefault()
+            }  
+        } 
+    </script>
+    <p style="font-size: 6px;">font size 6px</p>
+    <p>font size 默认</p>
+    <p style="font-size: 32px;">font size 32px</p>
+    <p style="font-size: 120px;">font size 120px</p>
+</body>
+</html>
